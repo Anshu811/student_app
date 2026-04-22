@@ -8,7 +8,7 @@ const authRoutes = require('./routes/auth');
 const app = express();
 
 app.use(cors({
-  origin: '*',
+  origin: ['https://student-auth-frontend-g5xc.onrender.com', 'http://localhost:5173'],
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization']
 }));
